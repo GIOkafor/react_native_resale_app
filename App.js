@@ -1,8 +1,17 @@
 import React from "react";
-import { View, Image, ImageBackground, Text } from "react-native";
-import WelcomeScreen from "./app/screens/WelcomScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
+import { View } from "react-native";
+import AppButton from "./app/components/AppButton/AppButton";
 
 export default function App() {
-  return <ViewImageScreen />;
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <AppButton>Login</AppButton>
+    </View>
+  );
 }
